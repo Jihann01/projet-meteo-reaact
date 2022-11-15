@@ -1,0 +1,89 @@
+.smry{
+    border-left: 1px solid var(--hrColor);
+}
+.smry:nth-of-type(1){
+    border-left: 0px solid var(--hrColor);
+}
+.smry > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.smry > div > p:nth-of-type(1) {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #095F62;
+}
+.smry > div > p:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.smry > div > p:nth-of-type(3) {
+    text-transform: uppercase;
+    color: darkgray;
+    font-size: 0.75rem;
+}
+.smry > div > p:nth-of-type(4) {
+    border-bottom: 1px solid var(--hrColor);
+}
+.smry > div > p:nth-of-type(2) img{
+    width: 50%;
+}
+@media only screen and (max-width: 480px){
+    .smry{
+        padding: 1rem;
+        border-left: none;
+
+    }
+    .smry > div > p:nth-of-type(4) {
+        border-bottom: none;
+    }
+    .smry > div > p:nth-of-type(3) {
+        font-size: 11px;
+        text-transform: capitalize;
+    }
+    .smry:nth-of-type(1) {
+        border-bottom: 1px solid var(--hrColor);
+        border-right: 1px solid var(--hrColor);
+    }
+    .smry:nth-of-type(2) {
+        border-bottom: 1px solid var(--hrColor);
+    }
+    .smry:nth-of-type(3) {
+        border-right: 1px solid var(--hrColor);
+    }
+}
+@media only screen and (max-width: 1024px){
+    .smry{
+        padding: 1.5rem;
+        border-left: none;
+        font-size: 1.75rem;
+    }
+    .smry > div > p:nth-of-type(1) {
+        font-size: 1.5rem;
+    }
+    .smry > div > p:nth-of-type(4) {
+        border-bottom: none;
+    }
+    .smry > div > p:nth-of-type(3) {
+        font-size: 1rem;
+        text-transform: capitalize;
+    }
+    .smry:nth-of-type(1) {
+        border-bottom: 1px solid var(--hrColor);
+        border-right: 1px solid var(--hrColor);
+    }
+    .smry:nth-of-type(2) {
+        border-bottom: 1px solid var(--hrColor);
+    }
+    .smry:nth-of-type(3) {
+        border-right: 1px solid var(--hrColor);
+    }
+}
+@media only screen and (max-width: 767px) {
+    .smry{
+        font-size: 1.15rem;
+    }
+}
